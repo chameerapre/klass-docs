@@ -1,29 +1,29 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Klass Facts",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
   "favicon": "/favicon.svg",
   "colors": {
-    "primary": "#0D9373",
+    "primary": "#C01C2E",
     "light": "#07C983",
-    "dark": "#0D9373",
+    "dark": "#103453",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#C01C2E",
+      "to": "#103453"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:support@klass.lk"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://login.klass.lk"
   },
   "tabs": [
     {
@@ -71,8 +71,8 @@
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/KlassLK",
+    "github": "https://github.com/OrigynCompany",
+    "linkedin": "https://www.linkedin.com/company/klass-lk"
   }
 }
