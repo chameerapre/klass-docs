@@ -25,54 +25,52 @@
     "name": "Dashboard",
     "url": "https://login.klass.lk"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
+  "topAnchor": {
+    "name": "Facts",
+    "icon": "book-open-cover"
+  },
   "anchors": [
     {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
       "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "icon": "facebook",
+      "url": "https://www.facebook.com/groups/klass"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://klass.lk"
     }
   ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "group": "",
+      "pages": ["home"]
     },
     {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+      "group": "Klass.lk ගැන",
+      "pages": ["what-is-klass-lk/klass-is", "what-is-klass-lk/klass-lk-services", "what-is-klass-lk/klass-lk-benefits"]
     },
     {
-      "group": "API Documentation",
-      "pages": ["api-reference/introduction"]
+      "group": "Klass.lk සමග ලියාපදිංචි වීම",
+      "pages": ["register-with-klass-lk/register-via-website", "register-with-klass-lk/register-via-facebook", "register-with-klass-lk/klass-lk-demo-version"]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Klass.lk සමග අධ්‍යාපන ආයතනයේ කටයුතු සිදු කිරීම",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "work-with-klass-lk/teacher-registration", "work-with-klass-lk/add-course-materials",
+        {
+          "group": "ආයතනයේ සැකසුම් විස්තර ඇතුළත් කිරීම",
+          "pages": ["work-with-klass-lk/institute-configuration/student-registration", "work-with-klass-lk/institute-configuration/add-bank-details", "work-with-klass-lk/institute-configuration/configure-registration-forms", "work-with-klass-lk/institute-configuration/video-upload", "work-with-klass-lk/institute-configuration/online-payments-from-students"]
+        },
+        "work-with-klass-lk/zoom-integration"
       ]
     }
   ],
   "footerSocials": {
+    "facebook": "https://facebook.com/klass.lk",
+    "instagram": "https://instagram.com/klass.lk",
     "twitter": "https://twitter.com/KlassLK",
-    "github": "https://github.com/OrigynCompany",
-    "linkedin": "https://www.linkedin.com/company/klass-lk"
+    "linkedin": "https://www.linkedin.com/company/klass-lk",
+    "youtube": "https://www.youtube.com/@klass-lk"
   }
 }
