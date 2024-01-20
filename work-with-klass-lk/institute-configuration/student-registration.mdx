@@ -1,58 +1,15 @@
 ---
 title: 'සිසුවෙකුට ලියාපදිංචි විය හැකි ආකාරය සකසා ගැනීම'
-description: 'Add image, video, and other HTML elements'
+description: 'ආයතනයේ සිසුවෙකුට ලියාපදිංචි විය හැකි ආකාරයන් කෙසේද?'
 ---
 
-<img
-  style={{ borderRadius: '0.5rem' }}
-  src="https://mintlify-assets.b-cdn.net/bigbend.jpg"
-/>
+පළමුව admin dashboard එක වෙත පැමිණ එහි ඇති settings tab එක click කරන්න.
 
-## Image
+![Settings Tab](/images/klass-work/settings-tab.png)
 
-### Using Markdown
+ඉන්පසු පැමිණෙන මුහුණතෙහි ඇති Registration Settings tab එක click කර සිසුන් ලියාපදිංචි වන ආකාරය අවශ්‍ය පරිදි සකසා ගන්න.
 
-The [markdown syntax](https://www.markdownguide.org/basic-syntax/#images) lets you add images using the following code
+![Student Settings](/images/klass-work/student-settings.png)
 
-```md
-![title](/path/image.jpg)
-```
+මෙහිදී ලියාපදිංචි වන සිසුන් ස්වයංක්‍රීයව ආයතනයට ලියාපදිංචි වීමට හෝ ආයතන හිමිකරු හෝ ගුරුවරයා විසින් ලියාපදිංචි වූ සිසුන් ආයතනයට අනුමත කිරීමට හෝ ලියාපදිංචි ගාස්තු අයකර ගැනීමට අවශ්‍ය සැකසුම් සකස් කර ගත හැකිය.
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
-
-### Using Embeds
-
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
-
-```html
-<img height="200" src="/path/image.jpg" />
-```
-
-## Embeds and HTML elements
-
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/4KzFe50RQkQ"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ width: '100%', borderRadius: '0.5rem' }}
-></iframe>
-
-<br />
-
-<Tip>
-
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
-
-</Tip>
-
-### iFrames
-
-Loads another HTML page within the document. Most commonly used for embedding videos.
-
-```html
-<iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
-```

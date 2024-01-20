@@ -1,65 +1,75 @@
 ---
 title: 'පංති හෝ පාඨමාලා පිළිබඳ විස්තර ඇතුළත් කිරීම'
-description: 'The navigation field in mint.json defines the pages that go in the navigation menu'
+description: 'Klass.lk platform එක භාවිත කරන ඔබගේ ආයතනයේ පංති සහ පාඨමාලා ඇතුළත් කරගන්නා ආකාරයu'
 ---
 
-The navigation menu is the list of links on every website.
+මුලින්ම admin dashboard එක වෙත පැමිණ එහි ඇති Courses tab එක click කරන්න
 
-You will likely update `mint.json` every time you add a new page. Pages do not show up automatically.
+![Course Tab](/images/klass-work/course-tab.png)
 
-## Navigation syntax
+එවිට ඔබ පහත දැක්වෙන මුහුණත වෙත පිවිසේ. ඉන්පසු එහි ඇති Add Course button එක click කරන්න.
 
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
+![Course Add Button](/images/klass-work/course-add-button.png)
 
-<CodeGroup>
+එහිදී පැමිණෙන පෝරමය පාඨමාලාවට ගැළපෙන පරිදි පුරවා save button එක කරන්න.
 
-```json Regular Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": ["quickstart"]
-    }
-]
-```
+![Course Form](/images/klass-work/course-form.png)
 
-```json Nested Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": [
-            "quickstart",
-            {
-                "group": "Nested Reference Pages",
-                "pages": ["nested-reference-page"]
-            }
-        ]
-    }
-]
-```
+මෙහිදී පාඨමාලාවේ නම නිවැරදිව ඇතුලත් කරන්න. Teacher ලෙස ඇති කොටසෙන් ඔබට පාඨමාලාව කරන ගුරුවරයා තෝරාගෙන ඇතුලත් කරගැනීමට සිදුවේ. ඒ සඳහා මුලින්ම ගුරුවරයෙකු ඔබේ ආයතනයට එකතු කරගත යුතු අතර එය කරගන්නා ආකාරය පෙර ලිපියක දක්වා ඇත.
 
-</CodeGroup>
+Payment Type ලෙස ඇති කොටසෙන් ඔබට පාඨමාලාවට අදාල ගාස්තුව ඇතුලත් කරගත හැකි අතර එය මාසික පංති ගාස්තුව වශයෙන්, පාඩම් වශයෙන්, වාරික වශයෙන් හෝ එසේ නැත්නම් නොමිලයේ ලබා දිය හැකිය.
 
-## Folders
+![Payment Type](/images/klass-work/payment-types.png)
 
-Simply put your MDX files in folders and update the paths in `mint.json`.
+Cover Image එක ලෙස පාඨමාලාවට ගැලපෙන පින්තූරයක් ඔබට එකතු කරගත හැකිය.
 
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
+දැන් පාඨමාලාවට අදාල පාඩම් එකතු කරගන්නා ආකාරය පිළිබඳ දැනුවත් වෙමු.
 
-<Warning>
+පහත රූපයේ දැක්වෙන පරිදි Module button එක click කරන්න.
 
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
+![Module Button](/images/klass-work/module-button.png)
 
-</Warning>
+ඉන්පසු ඔබ පහත රූපයේ ආකාරයේ මුහුණතකට පැමිනේ. එහි ඇති Add Module button එක click කර පැමිණෙන පෝරමයේ පාඩමේ නම ඇතුලත් කර save කරන්න.
 
-```json Navigation With Folder
-"navigation": [
-    {
-        "group": "Group Name",
-        "pages": ["your-folder/your-page"]
-    }
-]
-```
+![Module Add](/images/klass-work/add-module.png)
 
-## Hidden Pages
+ඉන්පසු සෑදෙන පාඩමේ පහත රූපයේ දැක්වෙන පරිදි Manage Session button එක click කරන්න.
 
-MDX files not included in `mint.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+![Session Manage](/images/klass-work/manage-session.png)
+
+එවිට පහත ආකාරයේ මුහුණතකට පැමිණේ. එහි ඇති Add Session button එක click කරන්න
+
+![Session Add](/images/klass-work/session-add.png)
+
+ඊලගට පැමිණෙන පෝරමය අදාල පාඩමට අනුව පුරවන්න.
+
+![Session Form](/images/klass-work/session-form.png)
+
+මෙහි පාඩමේ නම, පාඩම පවතින කාල සීමාව සහ වේලාව පාඩම සිසුන්ට ලබාදෙන ආකාරය Resource Type (උදා: Live Class, Zoom Link, MS Team link, Video link, Document) ඇතුලත් කරන්න.
+
+Session එක සඳහා Payment Type ඇතුලත් කිරීමේදී ඔබ පාඨමාලාව නිර්මාණය කිරීමේදී ලබා දුන් Payment Type එක අනුව ගාස්තු ඇතුලත් කිරීමට ඇති අවස්ථා වෙනස් වේ.  උදාහරණයක් ලෙස ඔබ පාඨමාලාවක් නිර්මාණය කිරීමේදී Payment Type එක ලෙස Installments ලබා දුන්නේ නම් මෙහි Covered by Class Fees ලබා දුන් විට අඩුම වාරිකය ඇතුලත් කිරීමට ඔබට අවස්තාව ඇත.
+
+![Class Fees](/images/klass-work/class-fees.png)
+![Installment Fees](/images/klass-work/installment-fee.png)
+
+පාඩම් සඳහා ඔබට සිසුන් වෙත ප්‍රශ්න ලබා දීමටද පහසුකම් ලබා දී තිබේ. මේ සඳහා අදාල පාඩමට පැමිණ Manage Questions Button එක click කරන්න.
+
+![Module Questions](/images/klass-work/module-questions.png)
+
+එවිට ඔබ පහත මුහුණතට පැමිණේ.
+
+![Create Import Questions](/images/klass-work/create-import-questions.png)
+
+මෙහි ඔබට ප්‍රශ්න ලබා දිය හැකි ආකාර දෙකක් පවතී.
+
+1. Platform එක තුලම පාඩමට අදාල ප්‍රශ්න නිර්මාණය.
+2. csv file එකක් ආධාරයෙන් පෙර සාදා තිබූ ප්‍රශ්න platform එක තුලට upload කිරීම.
+ 
+
+අපැහැදිලි තැනක් තිබේ නම් පහත වීඩියෝව නරඹන්න
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3ub51zXFDok?si=H0yP62aZ35EwHsbt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+

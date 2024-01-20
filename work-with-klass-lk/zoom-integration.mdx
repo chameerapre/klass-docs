@@ -1,58 +1,82 @@
 ---
 title: 'Zoom app එක Klass.lk වෙත එකතු කර LMS එක තුලින් live classes සාදා ගැනීම.'
-description: 'Add image, video, and other HTML elements'
+description: 'Zoom වෙත නොගොස් Klass.lk LMS එක තුලින්ම Zoom live classes සාදා ගැනීම.'
 ---
 
-<img
-  style={{ borderRadius: '0.5rem' }}
-  src="https://mintlify-assets.b-cdn.net/bigbend.jpg"
-/>
+මේ සඳහා පළමුව ඔබගේ Zoom account එක හරහා පහත වෙබ් පිටුවට පිවිසෙන්න.
 
-## Image
+https://marketplace.zoom.us/
 
-### Using Markdown
+![Zoom Marketplace](/images/klass-work/zoom-marketplace.png)
 
-The [markdown syntax](https://www.markdownguide.org/basic-syntax/#images) lets you add images using the following code
+Zoom account එකට log වූ පසු පහත පරිදි develop button එකෙන් එන dropdown menu එකෙහි build app click කරන්න.
 
-```md
-![title](/path/image.jpg)
-```
+![Zoom Develop App](/images/klass-work/develop-app.png)
+![Zoom Develop App](/images/klass-work/build-app.png)
 
-Note that the image file size must be less than 5MB. Otherwise, we recommend hosting on a service like [Cloudinary](https://cloudinary.com/) or [S3](https://aws.amazon.com/s3/). You can then use that URL and embed.
+ඉන්පසු එන මුහුණතෙහි පහලට ගමන් කළ පසු ඇති Server-to-Server OAuth හි ඇති create button එක click කරන්න.
 
-### Using Embeds
+![Zoom Server to server](/images/klass-work/server-to-server.png)
 
-To get more customizability with images, you can also use [embeds](/writing-content/embed) to add images
+ඉන්පසු ඔබ නිර්මාණය කරන app එකට නමක් ඇතුලත් කරන්න. මෙයට ඔබේ අධ්‍යාපන ආයතනයේ නම වුවත් ඇතුලත් කළ හැකිය.
 
-```html
-<img height="200" src="/path/image.jpg" />
-```
+![Zoom App Name](/images/klass-work/zoom-app-name.png)
 
-## Embeds and HTML elements
+මෙහි ඇති create button එක කළ පසු ඔබට අවශ්‍ය keys දිස්වේ. නමුත් මෙය active කර ගැනීමට තව පියවර කිහිපයක් සිදු කල යුතුය.
 
-<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/4KzFe50RQkQ"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  style={{ width: '100%', borderRadius: '0.5rem' }}
-></iframe>
+![Zoom App Keys](/images/klass-work/zoom-app-keys.png)
 
-<br />
+App එක active කර ගැනීමේ ඉදිරි පියවර සඳහා continue button එක click කරන්න.
 
-<Tip>
+![Zoom App Active](/images/klass-work/zoom-app-active.png)
 
-Mintlify supports [HTML tags in Markdown](https://www.markdownguide.org/basic-syntax/#html). This is helpful if you prefer HTML tags to Markdown syntax, and lets you create documentation with infinite flexibility.
+ඉන්පසු ඔබගේ විස්තර ඇතුලත් කර ඊලඟ පියවරට යන්න.
 
-</Tip>
+![Zoom App Details](/images/klass-work/zoom-app-details.png)
 
-### iFrames
+Features හි ඔබට ඇතුලත් කිරීමට කිසිවක් නැත. එම නිසා continue කර ඊලඟ පියවරට යන්න.
 
-Loads another HTML page within the document. Most commonly used for embedding videos.
+Scopes හි ඔබට පහත දත්ත select කිරීමට සිදුවේ. මුලින්ම Add scope button එක කරන්න.
 
-```html
-<iframe src="https://www.youtube.com/embed/4KzFe50RQkQ"> </iframe>
-```
+![Zoom App Scope](/images/klass-work/zoom-app-scope.png)
+
+ඉන්පසු එන මුහුණතෙහි පහත සඳහන් දෑ select කරන්න.
+
+![Zoom App Scope](/images/klass-work/zoom-app-scope-add.png)
+
+![Zoom App Scope](/images/klass-work/zoom-app-scope-add-2.png)
+
+ඉන්පසු ඔබ සඳහන් කළ දෑ පහත පරිදි දිස්වේ. ඊලගට Continue button එක කරන්න.
+
+![Zoom App Confirm](/images/klass-work/zoom-app-scope-confirm.png)
+
+අවසාන වශයෙන් ඊලගට පැමිණෙන මුහුණතෙහි Activate your app button එක click කරන්න.
+
+![Zoom App Activation](/images/klass-work/zoom-app-activation.png)
+
+දැන් ඔබ Zoom app එකක් සාදාගෙන එය activate කරගෙන අවසන්ය. ඊලගට ඇත්තේ කලින් දිස්වූ keys Klass platform එකට එකතු කර ගැනීමය.
+
+![Zoom App Keys](/images/klass-work/zoom-app-keys.png)
+
+දැන් ඔබගේ Klass account එකට log වී settings වලට යන්න.
+
+![Settings Tab](/images/klass-work/settings-tab.png)
+
+ඉන්පසු එහි ඉහල ඇති config tab එකට යන්න.
+
+![Settings Config](/images/klass-work/settings-config.png)
+
+එහි පහලට පැමිණි පසු Zoom API details කොටස දිස්වේ.
+
+![Zoom API](/images/klass-work/zoom-api.png)
+
+එහි edit button එක කරන්න.
+
+![Zoom API Edit](/images/klass-work/api-edit.png)
+
+ඉන්පසු ඔබ සාදාගත් Zoom app එකෙහි keys ඇතුලත් කර save කරන්න.
+
+![Zoom API Keys](/images/klass-work/add-api-keys.png)
+
+දැන් ඔබ සාර්ථකව Zoom Meeting, Klass LMS වෙත එකතු කරගෙන අවසන්ය. දැන් Zoom වෙත නොගොස් Klass.lk LMS එක තුලින්ම live classes සාදා ගැනීමට හැකියාව පවතී.
+

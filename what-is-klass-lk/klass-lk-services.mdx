@@ -1,65 +1,19 @@
 ---
 title: 'Klass.lk හි සේවා'
-description: 'The navigation field in mint.json defines the pages that go in the navigation menu'
+description: 'Klass.lk platform එකෙන් ඔබට ලැබෙන සේවාවන් මොනවාද?'
 ---
 
-The navigation menu is the list of links on every website.
+1. ලංකාවේ ඕනෙම තැනක ඉන්න ශිෂ්‍යයෙක් හෝ ශිෂ්‍යාවක් මාර්ගගත ක්‍රමයට ඔබගේ පන්තියට ලියාපදිංචි කර ගැනීම.
+මේ සඳහා Student Registration System එකක් සහ Student Portal එකක් Klass.lk platform එකේ තියෙනවා.
+ 
+2. Zoom, Microsoft Teams වගේ software හරහා සජීවීව පන්ති පවත්වන්නත් videos, tutes, documents අදාල ශිෂ්‍යයන් අතරෙ විතරක් ආරක්ශාකාරීව share කිරීමේ පහසුකම්.
+ 
+3. පහසුවෙන් සියලුම පන්ති ගාස්තු තමන්ගේ බැන්කු ගිනුමටම ලබා ගැනීමේ හැකියාව.
+මේ සඳහා ඔබට PayHere ගිණුමක් ආරම්භ කර එය klass.lk වෙත එකතු කර ගත යුතුය. එසේ නොමැති නම් පන්ති ගාස්තු ඔබගේ බැන්කු ගිණුමටම දමන ශිෂ්‍යයෙක්ට එහි Slip එකක් චායාරූපයකට ගෙන එය කෙලින්ම Platform එක තුලම  Upload කර පන්ති ගාස්තු ගෙවූ බව තහවුරු කරගන්න හැකියාව ඇත.
+ 
+4. ප්‍රශ්න පත්‍ර බෙදා දීම සහ ඒවාගෙන් විභාග පැවැත්වීම.
+මේ සඳහා විභාග කලමණාකරන පද්ධතියක් Platform එක තුලට අන්තර්ගත කර ඇත.
 
-You will likely update `mint.json` every time you add a new page. Pages do not show up automatically.
+5. සිසුන්ගේ පැමිණීම සටහන් කරගැනීමේ, පැමිණීම අනුව පන්ති ගාස්තු නිවරදිව ලබාගැනීමේ පහසුකම්
 
-## Navigation syntax
-
-Our navigation syntax is recursive which means you can make nested navigation groups. You don't need to include `.mdx` in page names.
-
-<CodeGroup>
-
-```json Regular Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": ["quickstart"]
-    }
-]
-```
-
-```json Nested Navigation
-"navigation": [
-    {
-        "group": "Getting Started",
-        "pages": [
-            "quickstart",
-            {
-                "group": "Nested Reference Pages",
-                "pages": ["nested-reference-page"]
-            }
-        ]
-    }
-]
-```
-
-</CodeGroup>
-
-## Folders
-
-Simply put your MDX files in folders and update the paths in `mint.json`.
-
-For example, to have a page at `https://yoursite.com/your-folder/your-page` you would make a folder called `your-folder` containing an MDX file called `your-page.mdx`.
-
-<Warning>
-
-You cannot use `api` for the name of a folder unless you nest it inside another folder. Mintlify uses Next.js which reserves the top-level `api` folder for internal server calls. A folder name such as `api-reference` would be accepted.
-
-</Warning>
-
-```json Navigation With Folder
-"navigation": [
-    {
-        "group": "Group Name",
-        "pages": ["your-folder/your-page"]
-    }
-]
-```
-
-## Hidden Pages
-
-MDX files not included in `mint.json` will not show up in the sidebar but are accessible through the search bar and by linking directly to them.
+6. ආයතනයේ ගුරුවරුන්ට ලබා දීමට ඇති මුදල් ස්වයංක්‍ර්‍රියව ගණනය කර දෙන බැවින් ඒවා පියවීම පහසුකිරීම
