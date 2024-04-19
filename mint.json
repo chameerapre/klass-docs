@@ -60,7 +60,7 @@
         "work-with-klass-lk/teacher-registration", "work-with-klass-lk/add-course-materials",
         {
           "group": "ආයතනයේ සැකසුම් විස්තර ඇතුළත් කිරීම",
-          "pages": ["work-with-klass-lk/institute-configuration/student-registration", "work-with-klass-lk/institute-configuration/add-bank-details", "work-with-klass-lk/institute-configuration/configure-registration-forms", "work-with-klass-lk/institute-configuration/video-upload", "work-with-klass-lk/institute-configuration/online-payments-from-students"]
+          "pages": ["work-with-klass-lk/institute-configuration/student-registration", "work-with-klass-lk/institute-configuration/add-bank-details", "work-with-klass-lk/institute-configuration/configure-registration-forms", "work-with-klass-lk/institute-configuration/video-upload", "work-with-klass-lk/institute-configuration/online-payments-from-students", "work-with-klass-lk/institute-configuration/send-sms-using-institute-name"]
         },
         "work-with-klass-lk/zoom-integration"
       ]
