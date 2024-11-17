@@ -17,6 +17,10 @@
   },
   "topbarLinks": [
     {
+      "name": "Community",
+      "url": "https://www.facebook.com/groups/klass"
+    },
+    {
       "name": "Support",
       "url": "mailto:support@klass.lk"
     }
@@ -29,18 +33,6 @@
     "name": "Facts",
     "icon": "book-open-cover"
   },
-  "anchors": [
-    {
-      "name": "Community",
-      "icon": "facebook",
-      "url": "https://www.facebook.com/groups/klass"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://klass.lk"
-    }
-  ],
   "navigation": [
     {
       "group": "",
