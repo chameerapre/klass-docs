@@ -53,6 +53,10 @@
         {
           "group": "ආයතනයේ සැකසුම් විස්තර ඇතුළත් කිරීම",
           "pages": ["work-with-klass-lk/institute-configuration/student-registration", "work-with-klass-lk/institute-configuration/add-bank-details", "work-with-klass-lk/institute-configuration/configure-registration-forms", "work-with-klass-lk/institute-configuration/video-upload", "work-with-klass-lk/institute-configuration/online-payments-from-students", "work-with-klass-lk/institute-configuration/send-sms-using-institute-name"]
+        },
+        {
+          "group": "වෙනත් Apps සමඟ සම්බන්ද කිරී​ම (Integrations)",
+          "pages": ["work-with-klass-lk/integrations/zoom"]
         }
       ]
     }
