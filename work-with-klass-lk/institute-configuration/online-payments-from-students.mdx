@@ -7,11 +7,42 @@ description: 'Online ගෙවීම් සිසුන්ගෙන් ලබා
 
 ![Settings Tab](/images/klass-work/settings-tab.png)
 
-ඉඉන්පසු පැමිණෙන මුහුණතෙහි Config tab එක click කර එහි ඇති Payment gateway කොටසෙහි PayHere keys ඇතුලත් කරන්න.
+ඉන්පසු පැමිණෙන මුහුණතෙහි Payments tab එක click කර එහි ඇති Payment gateway config කොටසෙහි ඔබගේ Pyament Gateway එක තෝරා ගන්​න. Klass.lk, Payhere සහ OnePay Payment gateway support කරනවා.
 
-![Online Payments](/images/klass-work/online-payments.png)
+![Payment Gateway Config](/images/klass-work/payment-gateway-config.png)
 
-මේ සඳහා ඔබට Payhere ගිණුමක් අවශ්‍ය වේ. එය [මෙතනින්](https://payhere.lk) ගොස් නිර්මාණය කරගන්න.
+## OnePay Payment Gateway
+
+ඔබ OnePay තෝරා ගන්නවා නම් Klass.lk සහ OnePay අතර ඇති Partnership එක හේතුවෙන් transaction එකක් සඳහා 2.4% ක් වැනි අඩු processing fee එකක් යටතේ online payments ලබාගන්න පුළුවන්.
+
+මෙහි Enable OnePay කල විට පහත පරිදි ඔබගේ විස්තර submit කිරීමට පෝරමයක් දිස්වේ. එහි විස්තර නිවැරදිව upload ක​ර Save button එක click කරන්න.
+
+![OnePay Request](/images/klass-work/onepay-request.png)
+
+OnePay මගින් ඔබේ තොරතුරු බලා approve කල පසු OnePay portal එකෙන් සාදාගන්නා OnePay App එකෙන් ලබාදෙන විස්තර ඇතුලත් කර Save button එක click කරන්​න. 
+
+![OnePay Keys](/images/klass-work/onepay-keys.png)
+
+ඉහත එකතු කරන සියලුම Keys OnePay portal එකෙහි App එකක් සාදාගැනීමෙන් අනතුරුව ඔබට ලැබේ. එම App එක සාදා ගැනීමේදී Callback url එක ලෙස
+
+```
+https://api.klass.lk/api/onepay/process
+```
+එකතු කිරීම අනිවාර්යයෙන් සිදු කල යුතුය.
+
+දැන් ඔබ සාර්තකව OnePay Payment Gateway එක ඔබගේ LMS එකට එකතු කරගෙන අවසන්. එනිසා සිසුන්ගෙන් Online Payments ලබා ගත හැකිය.
+
+## PayHere Payment Gateway
+
+ඔබට PayHere Payment Gateway එක සම්බන්ද කර ගැනීමට අවශ්‍ය නම් ඉහත Payment Gateway selection tab එකෙහි Payhere tab එකට ගොස් enable payhere කරන්න.
+
+මෙහි අවශ්‍ය Keys ලබා ගැනීම සඳ​හා ඔබට Payhere ගිණුමක් අවශ්‍ය වේ. එය [මෙතනින්](https://payhere.lk) ගොස් නිර්මාණය කරගන්න.
+
+ඉන්පසු Payhere portal එකෙන් සාදාගන්​නා keys පහත පෝරමයට එකතු කරන්න.
+
+![PayHere Keys](/images/klass-work/payhere-keys.png)
+
+දැන් ඔබ සාර්තකව PayHere Payment Gateway එක ඔබගේ LMS එකට එකතු කරගෙන අවසන්. එනිසා සිසුන්ගෙන් Online Payments ලබා ගත හැකිය.
 
 මේ පිළිබඳව සවිස්තරාත්මකව දැන ගන්න පහත වීඩියෝව නරඹන්න.
 
