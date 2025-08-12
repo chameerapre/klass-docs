@@ -1,32 +1,33 @@
-# Mintlify Starter Kit
+# Klass.lk Learning Management System (LMS)  
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+![Klass.lk Banner](https://www.klass.lk/klass.svg) 
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+Klass.lk is a modern **Learning Management System** designed for educators and learners to manage courses, track progress, and facilitate online education.  
 
-### Development
+---
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
+## ✨ Key Features  
+- **Course Creation & Management** – Organize lessons, upload materials (PDFs, videos, quizzes).  
+- **Student Enrollment** – Public/private courses with enrollment controls.  
+- **Assignments & Grading** – Submit, evaluate, and provide feedback.  
+- **Real-time Analytics** – Track student progress and engagement.  
+- **Mobile Responsive** – Accessible on all devices.  
 
-```
-npm i -g mintlify
-```
+---
 
-Run the following command at the root of your documentation (where mint.json is)
+## 🚀 Quick Start  
+1. **Sign up** at [Klass.lk](https://register.klass.lk) as an institute.
+1. **Create a Course** (Admin access required).  
+2. **Upload Content** – Add modules, quizzes, and deadlines.  
+3. **Manage Students** – Approve enrollments and monitor grades.  
 
-```
-mintlify dev
-```
+---
 
-### Publishing Changes
+## ❓ Support  
+- **FAQ:** [https://facts.klass.lk](https://facts.klass.lk)  
+- **Email:** `support@klass.lk`  
 
-Install our Github App to autopropagate changes from youre repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
+---
 
-#### Troubleshooting
-
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+## 📜 License  
+Proprietary software. Terms at [Klass.lk/terms](https://klass.lk/terms).  
