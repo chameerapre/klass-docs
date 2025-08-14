@@ -69,7 +69,7 @@
     "icon": "clock-rotate-left",
     "description": "Updates and changes",
     "pages": [
-      "changelog/overview"
+      "changelog/index"
     ]
   }
 ]
